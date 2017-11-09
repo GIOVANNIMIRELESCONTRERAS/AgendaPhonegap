@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Agenda</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="jquery-mobile/miTema.min.css" rel="stylesheet" type="text/css">
+<link href="jquery-mobile/jquery.mobile.structure-1.3.0.min.css" rel="stylesheet" type="text/css">
+<script src="jquery-mobile/jquery-1.11.1.min.js"></script>
+<script src="jquery-mobile/jquery.mobile-1.3.0.min.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="home">
+  <div data-role="header">
+    <a href="" data-icon="plus" data-iconpos="menu"></a>
+    <h1>Agenda</h1>
+    <a href="" data-icon="plus" data-iconpos="notext"></a>
+  </div>
+  <div data-role="content">
+     <form action="">
+     	<input type="text" id="nombre" placeholder="Nombre">
+     	<input type="text" id="apellidos" placeholder="Apellidos">
+     	<input type="email" id="correo" placeholder="Correo">
+     	<input type="tel" id="telefono" placeholder="Teléfono">     	
+     	<div data-role="fieldcontain">
+     	  <fieldset data-role="controlgroup" data-type="horizontal">
+     	    <legend>Sexo:</legend>
+     	    <input type="radio" name="sexo" id="sexo_0" value="H" checked />
+     	    <label for="sexo_0">Hombre</label>
+     	    <input type="radio" name="sexo" id="sexo_1" value="M" />
+     	    <label for="sexo_1">Mujer</label>
+   	    </fieldset>
+   	  </div>
+     	<input type="button" value="guardar" data-icon="check" id="btnGuardar">
+     </form>
+      </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Pie</h4>
+  </div>  
+</div>
+<div id="suma" data-role="page">
+	<div data-role="header">
+		<h1>Suma</h1>
+	</div>
+	<div data-role="content">
+		<input type="number" id="num1" name="sexo" placeholder="Numero 1">
+		<input type="number" id="num2" name="sexo" placeholder="Numero 2">
+		<button id="sumar">Sumar</button>
+		<output id="resSumar"></output>
+	
+	</div>
+
+</div> 
+ 
+ 
+ 
+ 
+  
+</body>
+<script src="js/operaciones.js"></script>
+</html>
